@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="/assets/Saba Irshad logo.png" alt="" />
+        </div>
+       
+        <div class="main-menu" id="main-menu">
+          <a href="#about">About</a>
+          <a href="#Education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+        </div>
+
+        <div >
+          <a href="#contact" class="contact-btn btn-primary"> Contact me </a>
+        </div>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="info">
+        <div>Hello!</div>
+        <div class="intro-heading">I'm <span class="name">Saba Irshad</span>, Web Developer & Programming Enthusiast</div>
+        <p>
+          A Frontend Developer passionate about building beautiful and
+          functional websites using HTML, CSS, and JavaScript.
+        </p>
+        <a href="#projects" class="projects-btn btn-primary">My Projects</a>
+        <a
+          href="https://www.linkedin.com/in/saba-irshad-b961a4256/"
+          class="linkedin-btn btn-secondary"
+          target="_blank"
+          >Follow me</a
+        >
+      </div>
+      <div class="hero-image">
+        <img src="/assets/9700_4_04-Photoroom (1).png" alt="My image" />
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm Saba Irshad — a passionate self-taught Frontend Developer with a degree in Information Technology and a deep love for coding, design, and continuous learning. Coming from a humble background in Pakistan, I've worked hard to turn challenges into opportunities. Through dedication and resourcefulness, I’ve built a solid foundation in HTML, CSS, JavaScript, and modern frameworks like React. I’ve also completed a fully functional e-commerce website as my final year project and am now diving deeper into the MERN stack and UI/UX best practices. My journey is fueled by a desire to support my family, create meaningful digital experiences, and eventually contribute to global tech spaces, In sha Allah. Every line of code I write is a step closer to that dream.
+      </p>
+    </section>
+
+    <section id="Education" >
+      <h2>Education</h2>
+      <div class="education">
+       <div class="education-card">
+          <h2>
+            Bachelors in Information Technology- BSIT
+          </h2>
+          <span class="duration">2021-2025</span>
+          <span class="result">CGPA:- 3.86/4.00</span>
+          <div class="institution-name">
+            The Islamia University of Bahawalpur
+          </div>
+          <div class="majors">
+            <h5>Majors</h5>
+            <ul>
+              <li>Programming Fundamentals</li>
+              <li>OOPS</li>
+              <li>Machine Learning</li>
+              <li>Web Technologies</li>
+            </ul>
+          </div>
+       </div>
+       <div class="education-card">
+          <h2>
+            Intermediate in Computer Sciences
+            
+          </h2>
+          <span class="duration">2019-2021</span>
+          <span class="result">Grade:- A & 84%</span>
+          <div class="institution-name">
+            FG Inter College Bahawalpur
+          </div>
+          <div class="majors">
+            <h5>Majors</h5>
+            <ul>
+              <li>Computer Science</li>
+              <li>Statistics</li>
+              <li>Mathematics</li>
+            </ul>
+          </div>
+       </div>
+      </div>
+    </section>
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git</li>
+        <li>Responsive Design</li>
+        <li>Bootstrap</li>
+        <li>Tailwind CSS</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="project-list">
+        
+        <div class="project-card">
+          <h3 class="project-name">Frontend of Ecommerce App</h3>
+          <div class="project-img">
+            <img src="/assets/Home 1.png" alt="project-image">
+          </div>
+          <p class="description">A responsive and attractive frontend of an Ecommerce App</p>
+          <ul class="technologies" >
+            <li>HTML</li>
+            <li>CSS-Bootstrap</li>
+            <li>JS</li>
+            <li>React</li>
+          </ul>
+          <a class="btn-github-repo btn-primary" target="_blank" href="https://github.com/SabaIrshadCode/Frontend-of-Ecommerce-App">Github Repo</a>
+        </div>
+        <div class="project-card">
+          <h3 class="project-name">Netflix frontend clone</h3>
+          <div class="project-img">
+            <img src="/assets/netflix layout clone.png" alt="project-image">
+          </div>
+          <p class="description">A responsive layout using custom css ,html and js.</p>
+          <ul class="technologies" >
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+          </ul>
+          <a class="btn-github-repo btn-primary" target="_blank" href="https://github.com/SabaIrshadCode/Netflix-Clone/tree/main/assets">Github Repo</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </section>
+    <div class="social-media">
+      <div class="social-media-icons">
+        <a 
+          class="linkedin"
+          href="https://www.linkedin.com/in/saba-khan-956017271/"
+          target="_blank"
+          >
+        <img src="/assets/linkedin_3991775.png" alt="linkedin">
+        </a>
+        <a 
+          class="facebook"
+          href="https://web.facebook.com/profile.php?id=100087594188174"
+          target="_blank"
+          >
+        <img src="/assets/facebook_2504903.png" alt="facebook">
+        </a>
+        <a 
+          class="instagram"
+          href="https://www.instagram.com/sabairshadxt/?hl=en"
+          target="_blank"
+          >
+        <img src="/assets/instagram_2111463.png" alt="instagram">
+        </a>
+        <a 
+          class="Github"
+          href="https://www.instagram.com/sabairshadxt/?hl=en"
+          target="_blank"
+          >
+        <img src="/assets/github_536452.png" alt="github">
+        </a>
+        <a class="mail" href="https://mail.google.com/mail/?view=cm&fs=1&to=sabairshad988@gmail.com" target="_blank">
+          <img src="/assets/email_12868600.png" alt="">
+        </a>
+        
+        
+      </div>
+
+    </div>
+    <footer>&copy; 2025 Saba Irshad. All rights reserved.</footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

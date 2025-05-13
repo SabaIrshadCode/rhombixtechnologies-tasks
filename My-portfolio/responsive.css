@@ -1,0 +1,125 @@
+:root {
+    --bg-light: #f3e9e9;
+    --primary: #5951f1e4;
+     --dark-blue: rgba(50, 50, 193, 0.856);
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --card-bg: #ffffff;
+    --xlarge-font-size: 2rem;
+    --large-font-size:1.2rem;
+    --medium-font-size: 0.9rem;
+    --small-font-size: 0.75rem; 
+  }
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 630px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 0rem;
+    }
+
+    nav {
+        padding: 1rem 1.1rem;
+        width: 100vw;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav .main-menu {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 98%;
+        background-color: var(--primary);
+        padding: 0.7rem 0.5rem;
+        text-align: center;
+        border-radius: 6px;
+      
+        /* Important: Always keep it flex */
+        display: flex;
+      
+        /* Start hidden off-screen */
+        transform: translateX(100%);
+        transition: transform 0.4s ease;
+        z-index: 1000;
+      }
+      
+      /* When open */
+      nav .main-menu.show {
+        transform: translateX(0);
+      }
+      
+    #main-menu>a:hover{
+        width: 100%;
+        margin: auto;
+        border-radius: 25px;
+        background-color: #f3e9e9;
+    }
+    .main-menu a {
+        color: white;
+    }
+    .contact-btn {
+        display: none;
+    }
+
+    .logo>img {
+        width: 35px;
+    }
+
+    section {
+        padding: 1rem 0.7rem;
+        max-width: 1000px;
+        height: auto;
+        margin: auto;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .contact {
+        margin-top: 1rem;
+    }
+
+    /* hero styling */
+    .hero,
+    .project-list,
+    .education {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1rem;
+    }
+
+    .hero .info {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* education */
+    .education-card {
+        margin-top: 0px;
+    }
+
+    /* social media icons*/
+
+    .social-media{
+        position: fixed;
+        right: 0;
+        bottom: 30px;
+      }
+
+}
+
+
