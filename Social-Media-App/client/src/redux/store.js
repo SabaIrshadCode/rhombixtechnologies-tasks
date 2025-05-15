@@ -8,4 +8,5 @@ const store = configureStore({
 
 const {dispatch} = store;
 
-export {store, dispatch};
+export {store , dispatch};
+ 
